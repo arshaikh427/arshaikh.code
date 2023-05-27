@@ -30,11 +30,18 @@ html{
   background-color: #bc2623;
   height: 200px;
 }
+
+/*
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto; 
 #Projects{
-  margin-top: 10px;
-  background-color: violet;
-  height: 200px;
-}
+  width: 80%;
+  margin: 0 auto;
+  }
+  */
 .lg{
   height:50px;
   width:50px;
@@ -85,7 +92,10 @@ html{
   margin: 4px 0 0 0;
 }
 
-
+#Projects{
+  max-width: 1080px;
+    margin: auto;
+}
 #Skills {
   max-width:1080px;
   margin:auto;
@@ -130,15 +140,54 @@ h3 {
 	border-bottom:3px solid #D6AC4B;
 		font-weight:800;
 }
-#Projects{
-  width: 90%;
+
+.sbar {
+  display:none;
+}
+.p1{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: violet;
+  height: 283px;
 }
-.sbar {
-  display:none;
+.p2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(15, 121, 47);
+  height: 200px;
+}
+.prdesc{
+  margin: 0 0 0 10px;
+}
+.vbtn{
+  padding: 10px 20px 10px 20px;
+  background: white;
+  color: black;
+  margin: 0 0 0 10px;
+  text-decoration: none;
+  height: 10px;
+  border-radius: 10px;
+}
+.vbtn:hover{
+  padding: 10px 20px 10px 20px;
+  background: rgb(255, 60, 0);
+  color: black;
+  margin: 0 0 0 10px;
+  text-decoration: none;
+  height: 10px;
+  border-radius: 10px;
+}
+.pimg{
+  block-size: auto;
+  height: 258px;
+  margin: 2px 0 0 10px;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  object-position: top center;
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -151,6 +200,14 @@ h3 {
     font-size: 40px;
     font-weight: 900;
   }
+  .pimg{
+  block-size: auto;
+  height: 137px;
+  margin: -2px 0 0 0;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  object-position: top center;
+}
   #hbars{
     display: flex;
     flex-direction: column;
@@ -165,6 +222,7 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+
   .bar h3 {
     text-align: center;
   }
@@ -196,4 +254,22 @@ h3 {
   .ang{
     display: none;
   }
+  .vbtn {
+    background: white;
+    color: black;
+    margin: 10px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+}
+  .p1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: violet;
+    height: 371px;
+    flex-direction: column;
+}
   }
