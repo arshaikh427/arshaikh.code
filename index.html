@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="portfolio.png" type="image/x-icon">
+
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<header>
+  <div class="navigation">
+  <nav class="navbar">
+    <a href="index.html">
+    <ul class="logo">
+      <img class="lg" src="portfolio.png" alt="" srcset=""><h1 class="lt">ARPortfolio</h1>
+    </ul>
+  </a>
+      <ul>
+        <li class="list-item"><a href="#Home">Home</a></li>
+        <li class="list-item"><a href="#Skills">Skills</a></li>
+        <li class="list-item"><a href="#Projects">Projects</a></li>
+      </ul>
+      <ul id="btn">
+        <li class="list-item1"><a href="#Home">Home</a></li>
+        <li class="list-item1"><a href="#Skills">Skills</a></li>
+        <li class="list-item1"><a href="#Projects">Projects</a></li>
+      </ul>
+      <button id="open" onclick="myBtn()">—</button>
+      <button id="close" onclick="myBtne()">✕</button>
+  </nav>
+</div>
+</header>
+<body>
+
+  <main>
+    <section id="Home">
+      <div class="intro"><h1>Hii...! I Am <br> AR Shaikh</h1></div>
+    <div class="About"><img class="profile" src="profile.jpg" alt="AR Shaikh" ><div class="mail"></div><p>"I Am Aspiring Front-End Web Developer...!" I Love Editing And Creating Gaming Videos. You Can Follow Me On Social Media<br><br><div class="mail2"><a href = "https://www.instagram.com/arshaikh_04/"><img src="instagram.png" height="25px" width="25px"></a><a href = "https://github.com/arshaikh427/"><img src="github.png" height="25px" width="25px"></a><a href = "https://www.youtube.com/channel/UCxoE61yxtjM3hhbHXmgZ3yA"><img src="youtube.png" height="25px" width="25px"></a></p></div></div></div></section>   
+    <section id="Skills">
+      <center><h1>Skills</h1></center>
+      <div class="bars">
+      <label for="html">HTML</label>
+      <div class="html">90%</div>
+      <label for="css">CSS</label>
+      <div class="css">50%</div>
+      <label for="javascript">JAVASCRIPT</label>
+      <div class="javascript">50%</div>
+      <label for="angularjs">ANGULARJS</label>
+      <div class="angularjs">10%</div>
+      </div>
+    </section>
+      <br>
+    <section id="Projects"><div class="p1"><img class="pimg" src="image.png"><div class="pdisc"><p class="prdesc">IslamicTune.com: Ad-free, serene, and exclusive for Muslims. Immerse in Nazams without interruptions. New version launching for Iʿtikāf observers, removing women's images. Professional, user-friendly interface. Fulfilling spiritual needs, it offers a tranquil experience.</p><br><a href="https://islamictune.000webhostapp.com" class="vbtn">Visit</a></div></div> <br>
+<div class="p2"><img class="pimg" src="image1.png"><div class="pdisc"><p class="prdesc">This Is My First Website I Built This In First Year Of My Collage,This Is A Old Portfolio Website</p><br><a href="https://https://blackarch0.github.io/ARPortfolio/.com" class="vbtn">Visit</a></div></div></section>
+  </main>
+</body>
+<script> 
+function myBtn(e){
+  document.getElementById("btn").style.display = "flex";
+  document.getElementById("close").style.display = "flex";
+  document.getElementById("open").style.display = "none";
+}
+function myBtne(e){
+  document.getElementById("btn").style.display = "none";
+  document.getElementById("close").style.display = "none";
+  document.getElementById("open").style.display = "flex";
+}
+
+</script>
+</html>
