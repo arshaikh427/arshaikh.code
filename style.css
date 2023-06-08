@@ -8,10 +8,9 @@ html{
 }
 #Home{
   height: 670px;
-  background: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F007%2F635%2F216%2Fsmall%2Fempty-dark-room-modern-futuristic-sci-fi-background-free-video.jpg&tbnid=kAsmfrR6sNCz3M&vet=10CAIQxiAoAGoXChMI0IbB1IG0_wIVAAAAAB0AAAAAEA4..i&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-videos%2Fbackgrounds&docid=6v788iySAiQ5uM&w=356&h=200&itg=1&q=video%20image%20background&ved=0CAIQxiAoAGoXChMI0IbB1IG0_wIVAAAAAB0AAAAAEA4);
 }
 .About{
-  background-color: springgreen;
+    background: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F007%2F635%2F216%2Fsmall%2Fempty-dark-room-modern-futuristic-sci-fi-background-free-video.jpg&tbnid=kAsmfrR6sNCz3M&vet=10CAIQxiAoAGoXChMI0IbB1IG0_wIVAAAAAB0AAAAAEA4..i&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-videos%2Fbackgrounds&docid=6v788iySAiQ5uM&w=356&h=200&itg=1&q=video%20image%20background&ved=0CAIQxiAoAGoXChMI0IbB1IG0_wIVAAAAAB0AAAAAEA4);
   width: 70%;
   margin: 0 auto;
   display: flex;
