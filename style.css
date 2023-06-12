@@ -416,6 +416,15 @@ border: 1px solid rgba(255, 255, 255, 0.94);
   align-items: center;
   justify-content: center;
 }
+    .p2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 420px;
+    flex-direction: column;
+}
 .navbar ul .list-item{
   background: #20006c;
   padding: 10px;
