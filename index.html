@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="portfolio.png" type="image/x-icon">
-
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <title>Portfolio Website</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
@@ -24,12 +24,12 @@
         <li class="list-item"><a href="#Projects">Projects</a></li>
       </ul>
       <ul id="btn">
-             <li class="list-item1" onclick="myLi()><a href="#Home">Home</a></li>
-        <li class="list-item1" onclick="myLi()><a href="#Skills">Skills</a></li>
-        <li class="list-item1" onclick="myLi()><a href="#Projects">Projects</a></li>
+        <li class="list-item1"><a href="#Home" onclick="myLi()">Home</a></li>
+        <li class="list-item1"><a href="#Skills" onclick="myLi()">Skills</a></li>
+        <li class="list-item1"><a href="#Projects" onclick="myLi()">Projects</a></li>
 
       </ul>
-  <!-----    <button id="open" onclick="myBtn()">—</button> ------>
+      <button id="open" onclick="myBtn()">—</button>
       <button id="close" onclick="myBtne()">✕</button>
   </nav>
 </div>
@@ -69,25 +69,5 @@ gap: 5px;
 justify-content: center;"><span style="font-size: 10px; gap: 5px; display: flex; justify-content: center;">&copy;Copyright 2023 by  <a style="color: black;" href="https://www.instagram.com/arshaikh_04/">ARShaikh</a></span></footer> 
 </main>
 </body>
-<script> 
-function myBtn(e){
-  document.getElementById("btn").style.display = "flex";
-  document.getElementById("close").style.display = "flex";
-  document.getElementById("open").style.display = "none";
-}
-function myBtne(e){
-  document.getElementById("btn").style.display = "none";
-  document.getElementById("close").style.display = "none";
-  document.getElementById("open").style.display = "flex";
-}
-function myfn(e){
-  document.getElementById("Projects").style.display = "flex";
-  document.getElementById("Projects").style.flexDirection = "column";
-}
-function myLi(e){
-  let a = document.getElementById("btn");
-  a.style.display = "none";
-}
-
-</script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 </html>
