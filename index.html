@@ -24,9 +24,9 @@
         <li class="list-item"><a href="#Projects">Projects</a></li>
       </ul>
       <ul id="btn">
-        <li class="list-item1"><a href="#Home">Home</a></li>
-        <li class="list-item1"><a href="#Skills">Skills</a></li>
-        <li class="list-item1"><a href="#Projects">Projects</a></li>
+        <li class="list-item1" onclick="myLi()><a href="#Home">Home</a></li>
+        <li class="list-item1" onclick="myLi()><a href="#Skills">Skills</a></li>
+        <li class="list-item1" onclick="myLi()><a href="#Projects">Projects</a></li>
 
       </ul>
       <button id="open" onclick="myBtn()">—</button>
@@ -84,6 +84,9 @@ function myfn(e){
   document.getElementById("Projects").style.display = "flex";
   document.getElementById("Projects").style.flexDirection = "column";
 }
-
+function myBtn(e){
+  let a = document.getElementByClassName("btn");
+  a.style.display = "none";
+}
 </script>
 </html>
