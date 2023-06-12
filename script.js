@@ -100,3 +100,21 @@ $(document).ready(function () {
 			$('#hards').addClass("bactive");		
 	});
 });
+
+
+function myBtn(e){
+	document.getElementById("btn").style.display = "flex";
+	document.getElementById("close").style.display = "flex";
+	document.getElementById("open").style.display = "none";
+  }
+  function myBtne(e){
+	document.getElementById("btn").style.display = "none";
+	document.getElementById("close").style.display = "none";
+	document.getElementById("open").style.display = "flex";
+  }
+  function myLi(e){
+	let a = document.getElementById("btn");
+	a.style.display = "none";
+	document.getElementById("close").style.display = "none";
+	document.getElementById("open").style.display = "flex";
+  }
