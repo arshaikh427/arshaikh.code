@@ -7,12 +7,51 @@
 html, body {
     height: 100%;
   }
-  
+  @media only screen and (max-width: 600px) {
+
+
   body {
-    margin: 0;
-    padding: 0;
-    background: url('img/bg.jpg') no-repeat fixed;
+    background-image: url('img/bg.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  .arrow {
+    width: 40px;
+    height: 40px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    animation: arrowAnimation 1s infinite;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+  
+  .arrow:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .arrow:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes arrowAnimation {
+    0% {
+      transform: rotate(45deg) translateY(0);
+      opacity: 0;
+    }
+    50% {
+      transform: rotate(45deg) translateY(10px);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(45deg) translateY(0);
+      opacity: 0;
+    }
   }
   
   
@@ -26,7 +65,7 @@ nav{
     background: purple;
     height: 36px;
     width: 100%;
-    margin-top: 90vh;
+    margin-top: 95vh;
 }
 nav ul{
     display: flex;
@@ -98,6 +137,9 @@ nav ul li a{
 .imgp{
     height: 160px;
 }
+.nav2{
+    display: none;
+}
 .head{
     font-size: 1.625rem;
     margin: 50px auto 0 auto;
@@ -117,6 +159,25 @@ nav ul li a{
     width: 300px;
     background: #626060;
     z-index: 0;
+}
+#box2{
+    height: 330px;
+    width: 300px;
+    background: #626060;
+    z-index: 0;
+}
+
+.clmn{
+    display: flex;
+    flex-direction: column;
+}
+
+#box3{
+    height: 330px;
+    width: 300px;
+    background: #626060;
+    z-index: 0;
+}
 }
 /*
 .bot{
