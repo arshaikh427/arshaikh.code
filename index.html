@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <!-- Other head content -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +19,18 @@
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 
     <style>
+      @media (max-width:700px){
       h1 {
         font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
       }
       p {
         font-size: 1.3rem;
       }
+    
       body {
         margin: 0;
         font-family: "Prompt", sans-serif;
@@ -29,7 +38,6 @@
         background: #202731;
         overflow-x: hidden;
       }
-
       section {
         position: relative;
         display: flex;
@@ -37,6 +45,7 @@
         align-items: center;
         min-height: 400px;
         padding-top: 159px;
+        width: 100%;
       }
 
       .red {
@@ -98,7 +107,10 @@
         background-color: #0f0f10;
         height: 85%;
       }
-
+      .stick{
+        position: sticky;
+        top: 0;
+      }
       /* Curved bg with SVG via https://www.shapedivider.app/ */
 
       .wave {
@@ -122,7 +134,12 @@
       }
 
       /* SVG background image via https://haikei.app/ */
-
+header{
+  top: 0;
+  position: sticky;
+  z-index: 9;
+  background: #271e1e;
+}
       .spacer {
         aspect-ratio: 960/300;
         width: 100%;
@@ -158,10 +175,39 @@
         width: 100%;
         background: url("./blobs.svg") no-repeat bottom / cover;
       }
+      .navigation{
+        display: flex;
+    gap: 29px;
+    font-size: 20px;
+    float: right;
+    margin: -57px 3px 1px 1px;
+
+      }
+      li{
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+
+
     </style>
   </head>
   <body>
-    <section class="red">
+    <header>
+    <div class="stick">
+    <h2>/arshaikh.code</h2>
+    <ul class="navigation">
+      <li><a href="#home"><i class="fas fa-home"></i> </a></li>
+      <li><a href="#about"><i class="fas fa-info-circle"></i> </a></li>
+      <li><a href="#others"><i class="fas fa-cogs"></i> </a></li>
+    </ul>
+  </div>
+</header>
+    <section id="home" class="red">
       <h1>/welcome</h1>
       <p>
         Hey There!, My name is AR Shaikh. I’m a software developer passionate
@@ -169,24 +215,12 @@
         general.
       </p>
 
-      <div class="wave">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
+
     </section>
 
     <div class="spacer layer1"></div>
 
-    <section>
+    <section id="about"> 
       <h1>/About</h1>
       <p>
         I'm a web developer and an gamer, passionate about learning new skills
@@ -198,7 +232,7 @@
 
     <div class="spacer layer2 flip"></div>
 
-    <section class="pink">
+    <section id="others" class="pink">
       <div class="blob-content">
         <h1>/Other Stuffs</h1>
         <p>
