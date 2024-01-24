@@ -20,6 +20,7 @@
 
     <style>
 /* Common styles for all screen sizes */
+/* Common styles for all screen sizes */
 body {
   margin: 0;
   font-family: "Prompt", sans-serif;
@@ -128,7 +129,11 @@ header {
   z-index: 9;
   background: #271e1e;
 }
-
+p {
+    font-size: 2em;
+    margin: 10px 146px 73px 384px;
+    z-index: 2;
+}
 .spacer {
   aspect-ratio: 960/300;
   width: 100%;
@@ -136,7 +141,11 @@ header {
   background-position: center;
   background-size: cover;
 }
-
+h1 {
+    font-size: 3em;
+    margin-right: 14vw;
+    z-index: 2;
+}
 .layer1 {
   background-image: url("./layer1.svg");
 }
@@ -249,7 +258,10 @@ a {
         transform: translate(85%, 60%);
         background-color: hsl(216, 21%, 16%);
       }
-
+      p{
+        color: #f1f1f1;
+        margin: 0;
+      }
       .curve::after {
         content: "";
         display: block;
