@@ -1,0 +1,352 @@
+/* Common styles for all screen sizes */
+body {
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+  color: white;
+  background: #202731;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding-top: 159px;
+  width: 100%;
+}
+
+.red {
+  background: #dd3f31;
+}
+
+.pink {
+  background: #ff0066;
+  overflow: hidden;
+}
+
+.dark {
+  background: #0f0f10;
+}
+
+/* Curved bg with plain CSS */
+
+.curve {
+  position: absolute;
+  height: 142px;
+  width: 339px;
+  top: -172px;
+  text-align: center;
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: hsl(216, 21%, 16%);
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #3c31dd;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
+/* Bubble bg with plain CSS */
+
+.bubble::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: #0f0f10;
+  height: 85%;
+}
+
+/* Curved bg with SVG via https://www.shapedivider.app/ */
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 262px;
+}
+
+.wave .shape-fill {
+  fill: hsl(271.38deg 98.97% 24.06%);
+}
+
+/* SVG background image via https://haikei.app/ */
+
+header {
+  top: 0;
+  position: sticky;
+  z-index: 9;
+  background: #271e1e;
+}
+p {
+    font-size: 2em;
+    margin: 10px 146px 73px 384px;
+    z-index: 2;
+}
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+h1 {
+    font-size: 3em;
+    margin-right: 14vw;
+    z-index: 2;
+}
+.layer1 {
+  background-image: url("./layer1.svg");
+}
+
+.layer2 {
+  background-image: url("./layer2.svg");
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+/* Blobs SVG background image via https://haikei.app/ */
+
+.blob-motion {
+  position: absolute;
+  transform: translateY(-20%);
+  z-index: 0;
+}
+
+.blob-content {
+  z-index: 1;
+}
+
+.blobs {
+  width: 100%;
+  background: url("./blobs.svg") no-repeat bottom / cover;
+}
+
+/* Navigation styles */
+.navigation {
+  display: flex;
+  gap: 29px;
+  font-size: 20px;
+  float: right;
+  margin: -57px 3px 1px 1px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Media query for laptop and desktop screens */
+
+
+      @media (max-width:700px){
+      h1 {
+        font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    
+      body {
+        margin: 0;
+        font-family: "Prompt", sans-serif;
+        color: white;
+        background: #202731;
+        overflow-x: hidden;
+      }
+      section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding-top: 159px;
+        width: 100%;
+      }
+
+      .red {
+        background: #dd3f31;
+      }
+
+      .pink {
+        background: #ff0066;
+        overflow: hidden;
+      }
+
+      .dark {
+        background: #0f0f10;
+      }
+
+      /* Curved bg with plain CSS */
+
+      .curve {
+        position: absolute;
+        height: 142px;
+        width: 339px;
+        top: -172px;
+        text-align: center;
+      }
+
+      .curve::before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        transform: translate(85%, 60%);
+        background-color: hsl(216, 21%, 16%);
+      }
+      p{
+        color: #f1f1f1;
+        margin: 0;
+      }
+      .curve::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: #3c31dd;
+        transform: translate(-4%, 40%);
+        z-index: -1;
+      }
+
+      /* Bubble bg with plain CSS */
+
+      .bubble::after {
+        content: "";
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 50% 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: #0f0f10;
+        height: 85%;
+      }
+      .stick{
+        position: sticky;
+        top: 0;
+      }
+      /* Curved bg with SVG via https://www.shapedivider.app/ */
+
+      .wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+      }
+
+      .wave svg {
+        position: relative;
+        display: block;
+        width: calc(103% + 1.3px);
+        height: 262px;
+      }
+
+      .wave .shape-fill {
+        fill: hsl(271.38deg 98.97% 24.06%);
+      }
+
+      /* SVG background image via https://haikei.app/ */
+header{
+  top: 0;
+  position: sticky;
+  z-index: 9;
+  background: #271e1e;
+}
+      .spacer {
+        aspect-ratio: 960/300;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .layer1 {
+        background-image: url("./layer1.svg");
+      }
+      .layer2 {
+        background-image: url("./layer2.svg");
+      }
+
+      .flip {
+        transform: rotate(180deg);
+      }
+
+      /* Blobs SVG background image via https://haikei.app/ */
+
+      .blob-motion {
+        position: absolute;
+        transform: translateY(-20%);
+        z-index: 0;
+      }
+
+      .blob-content {
+        z-index: 1;
+      }
+
+      .blobs {
+        width: 100%;
+        background: url("./blobs.svg") no-repeat bottom / cover;
+      }
+      .navigation{
+        display: flex;
+    gap: 29px;
+    font-size: 20px;
+    float: right;
+    margin: -57px 3px 1px 1px;
+
+      }
+      li{
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+
